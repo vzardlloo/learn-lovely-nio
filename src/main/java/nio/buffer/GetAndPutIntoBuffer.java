@@ -4,6 +4,9 @@ package nio.buffer;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 
+/**
+ * 缓存区的基本存取
+ */
 public class GetAndPutIntoBuffer {
 
     //创建一个字符缓冲区，容量为15
@@ -13,7 +16,7 @@ public class GetAndPutIntoBuffer {
     static CharBuffer charBuffer = CharBuffer.allocate(100);
     //strings的游标
     static int index = 0;
-
+    //测试字符串
     static String[] strings = {
             "A random string value",
             "The product of an infinite number of monkeys",
@@ -79,8 +82,7 @@ public class GetAndPutIntoBuffer {
         for (int i = 0; i < str.length(); i++) {
             buffer.put(str.charAt(i));
         }
-//        System.out.println("position :: "+buffer.position());
-//        System.out.println("limit :: "+buffer.limit());
+
         return true;
     }
 
