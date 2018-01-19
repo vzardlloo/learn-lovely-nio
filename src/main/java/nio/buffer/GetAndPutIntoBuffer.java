@@ -12,7 +12,7 @@ public class GetAndPutIntoBuffer {
     //创建一个字符缓冲区，容量为15
     static ByteBuffer buffer = ByteBuffer.allocate(15);
 
-    //创建一个字符缓冲流
+    //创建一个字符缓冲区
     static CharBuffer charBuffer = CharBuffer.allocate(100);
     //strings的游标
     static int index = 0;
