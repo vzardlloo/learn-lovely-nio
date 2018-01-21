@@ -1,6 +1,8 @@
 package nio.buffer;
 
 
+import nio.kit.PrintKit;
+
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
 
@@ -30,6 +32,7 @@ public class GetAndPutIntoBuffer {
         //put 5 个字符进入缓冲区
         //默认的put(),get()都是在position指向的位置进行
         buffer.put((byte) 'H').put((byte) 'E').put((byte) 'L').put((byte) 'L').put((byte) 'O');
+
         // capacity,limit,position,mark是buffer的基本属性,大部分操作要依赖于它们
         //容量
         System.out.println("capacity :: " + buffer.capacity());
