@@ -14,6 +14,9 @@ import java.nio.channels.FileLock;
 import java.nio.channels.OverlappingFileLockException;
 import java.util.Random;
 
+/**
+ * 文件锁的使用
+ */
 public class ExampleForFileLock {
     //int类型的字节数
     private static final int SIZEOF_INT = 4;
