@@ -52,6 +52,7 @@ public class ExampleChannel {
         }
         //读到内存里并打印
         for (int i = 0; i < bb.length; i++) {
+            //把文件填充到bb[i] 直到文件流结束
             while (fileChannel.read(bb[i]) != -1) {
                 bb[i].flip();
                 PrintKit.printBuffer(bb[i]);
