@@ -10,8 +10,13 @@ import java.nio.channels.SocketChannel;
 public class ConnectAsync {
 
     public static void main(String[] args) throws Exception {
+        if (1 <= args.length && args.length < 2) {
+            System.out.println("Usage: [host port]");
+            return;
+        }
         String host = "localhost";
         int port = 8000;
+
         if (args.length == 2) {
             host = args[0];
             port = Integer.parseInt(args[1]);

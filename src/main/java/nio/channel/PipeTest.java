@@ -6,6 +6,9 @@ import java.nio.ByteBuffer;
 import java.nio.channels.*;
 import java.util.Random;
 
+/**
+ * 管道的使用 buffer(in thread_1) -->WritableByteBuffer-->pipe连接-->ReadableByteBuffer -->buffer(in thread_2)
+ */
 public class PipeTest {
 
     public static void main(String[] args) throws Exception {

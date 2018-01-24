@@ -13,7 +13,7 @@ public class ChannelAccept {
     private static final String GREETING = "Hello I must be going.\r\n";
 
     public static void main(String[] args) throws Exception {
-        int port = 10000;
+        int port = 8000;
         if (args.length > 0) {
             port = Integer.parseInt(args[0]);
         }
